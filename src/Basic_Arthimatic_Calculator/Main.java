@@ -35,7 +35,12 @@ public class Main {
                 break;
 
             case '%':
-                result = a%b;
+                if(b!=0)
+                    result = a%b;
+                else {
+                    System.out.println("Cannot be divided by Zero");
+                    flag = 0;
+                }
                 break;
 
             default:
